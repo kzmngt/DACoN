@@ -3,7 +3,7 @@
 [Paper Link](https://arxiv.org/pdf/????.????)
 -->
 
-https://github.com/kzmngt/DACoN/assets/43016459/architecture.png
+https://github.com/kzmngt/DACoN/assets/architecture.png
 
 
 ## Usage
