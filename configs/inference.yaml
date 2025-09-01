@@ -1,0 +1,29 @@
+
+name: dacon_inference
+model_type: DACoN
+
+num_gpu: 1
+manual_seed: 42
+
+version: "1_0" # "1_0"
+
+datasets:
+  val:
+    num_worker: 4
+  
+network:
+  feats_dim: 128
+
+  dino_model_type: dinov2_vitl14
+  dino_input_size: [518, 518]
+
+  unet_input_size: [512, 512]
+  unet_input_dim: 3
+  unet_hidden_dim_list: [64, 128, 256, 512]
+
+  segment_pool_size: [512, 512]
+
+val:
+  save_images: True
+  save_json: False
+

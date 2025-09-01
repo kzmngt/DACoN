@@ -1,0 +1,50 @@
+
+name: dacon_test
+model_type: DACoN
+
+num_gpu: 1 
+manual_seed: 42
+
+version: "1_1" # "1_0"
+colorize_type: keyframe # keyframe, consecutive_frame
+ref_shot: 1 # 1, 5, max (for keyframe colorization)
+
+
+datasets:
+  name: PaintBucket_Char_v2
+  clip_interval: 20 # max (for PaintBucket_Real) 
+
+  val:
+    root: dataset/PaintBucket_Char_v2/test/PaintBucket_Char_v2/
+    # root: dataset/PaintBucket_Char_v2/test/PaintBucket_Real/
+    save_path: outputs/
+    num_worker: 4
+    
+    
+
+network:
+  feats_dim: 128
+
+  dino_model_type: dinov2_vitl14
+  dino_input_size: [518, 518]
+
+  unet_input_size: [512, 512]
+  unet_input_dim: 3
+  unet_hidden_dim_list: [64, 128, 256, 512]
+
+  segment_pool_size: [512, 512]
+
+val:
+  save_images: True
+  save_json: True
+  save_path: outputs/
+
+  batch_size: 1
+
+losses:
+  loss_scale_ce: 0.5
+  loss_scale_mae: 0.2
+
+
+
+
