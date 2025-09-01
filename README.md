@@ -70,7 +70,7 @@ You can download the pretrained checkpoints from the following links and puts un
 |   Model    |   Download  |                                  Description                                                    |
 | :--------: | :---------: | :---------------------------------------------------------------------------------------------: |
 | DACoN v1.0 | [link](https://drive.google.com/file/d/1VvgLFwas_LcawrWh274BEpw2P_euOg3a/view?usp=sharing) |                                 Same architecture as paper                                      |
-| DACoN v1.1 | [link](https://drive.google.com/file/d/1KJ77-aFDePmsJ6LDicJgM4pyGjagu6aI/view?usp=sharing) | Fix the image size during segment pooling.<br>Fuse DINO and U-Net features<br> using simple addition instead of concat + MLP. |
+| DACoN v1.1 | [link](https://drive.google.com/file/d/1KJ77-aFDePmsJ6LDicJgM4pyGjagu6aI/view?usp=sharing) | Fix the image size during segment pooling.<br>Fuse DINO and U-Net features using simple addition instead of concat + MLP. |
 
 You can evaluate model using the following command:
 
