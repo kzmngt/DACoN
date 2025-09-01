@@ -3,7 +3,7 @@
 [Paper Link](https://arxiv.org/pdf/????.????)
 -->
 
-<img src="assets/architecture.png" width="800px"/>
+https://github.com/kzmngt/DACoN/assets/43016459/architecture.png
 
 
 ## Usage
@@ -69,9 +69,9 @@ The checkpoints are saved under:
 You can download the pretrained checkpoints from the following links and puts under `checkpoints` folder.
 
 |   Model    |   Download  |                                  Description                                                    |
-| :--------- | :---------: | :---------------------------------------------------------------------------------------------: |
+| :--------: | :---------: | :---------------------------------------------------------------------------------------------: |
 | DACoN v1.0 | Please wait |                                 Same architecture as paper                                      |
-| DACoN v1.1 | Please wait | Fix the image size during segment pooling.<br>Fuse DINO and U-Net features.<br> using simple addition instead of concat + MLP. |
+| DACoN v1.1 | Please wait | Fix the image size during segment pooling.<br>Fuse DINO and U-Net features<br> using simple addition instead of concat + MLP. |
 
 You can evaluate model using the following command:
 
@@ -84,8 +84,8 @@ python ./dacon/test.py \
 
 You can control the following behaviors via the YAML configuration (test.yaml):
 
-Keyframe or Consecutive-frame colorization
-Number of reference images used for keyframe colorization
+- Keyframe or Consecutive-frame colorization
+- Number of reference images used for keyframe colorization
 
 ## Inference
 
@@ -140,3 +140,4 @@ If you find this work useful, please cite our paper:
 }
 ```
 -->
+
