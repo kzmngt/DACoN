@@ -246,7 +246,7 @@ def main(args):
         val_results = validate_multi_ref(model, config, device, save_images, save_json, save_path)
 
     elif colorize_type == "consecutive_frame":
-        val_data_list = make_val_data_list(val_data_root, colorize_type, clip_interval, ref_shot)
+        val_data_list = make_val_data_list(val_data_root, colorize_type, clip_interval)
         val_dataset = DACoNDataset(val_data_list, val_data_root, mode = "val_cf")
         val_dataloader = DataLoader(val_dataset, batch_size=val_batch_size, shuffle=False, num_workers=num_workers_val, collate_fn=dacon_pad_collate_fn)
         logger.info(f"  Evaluating on {len(val_dataset)} samples.")
@@ -257,8 +257,7 @@ def main(args):
     elif colorize_type == "consecutive_frame":
         logger.info(f"\n  Evaluation Results for Consecutive Frame Colorization:")
     eval_summary = (
-        f"\n  Average Loss: {val_results['loss']:.8f}\n"
-        f"  Segment Accuracy: {val_results['seg_acc']:.4f} (Threshold: {val_results['seg_acc_thres']:.4f})\n"
+        f"\n  Segment Accuracy: {val_results['seg_acc']:.4f} (Threshold: {val_results['seg_acc_thres']:.4f})\n"
         f"  Pixel Accuracy: {val_results['pix_acc']:.4f} (Foreground: {val_results['pix_fg_acc']:.4f})\n"
         f"  Pixel Background MIoU: {val_results['pix_bg_miou']:.4f}"
     )

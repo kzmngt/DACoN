@@ -120,7 +120,7 @@ class MAELoss(BaseLoss):
                 seg_sim_map_batch = seg_sim_map_batch / self.tau
                 dino_sim_map_batch = dino_sim_map_batch / self.tau
 
-                loss = F.l1_loss(dino_sim_map_batch, dino_sim_map_batch)
+                loss = F.l1_loss(seg_sim_map_batch, dino_sim_map_batch)
                 total_loss += loss 
                 loss_data_num += 1
             

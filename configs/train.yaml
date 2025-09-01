@@ -14,7 +14,6 @@ datasets:
 
   train:
     root: dataset/PaintBucket_Char_v2/train/PaintBucket_Char_v2/
-    frame_distance_list: [0,1,2]
     seg_size: [512, 512]
     use_shuffle: True
     num_worker: 4

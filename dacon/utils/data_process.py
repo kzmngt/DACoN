@@ -102,16 +102,16 @@ def make_train_data_list(data_root):
         frame_num = get_file_count(os.path.join(data_root, char_name, "gt"))
         for i in range(frame_num):
                 
-                value = random.choice([0, 1, 2])
-                sign = random.choice([-1, 1])
-                src_idx = i + value * sign
-                
-                if src_idx >= frame_num:
-                    src_idx %= frame_num
-                elif src_idx < 0:
-                    src_idx = frame_num + src_idx
-   
-                data_list.append([char_name, [src_idx], [i]]) #char_name, frame_idx_src, frame_idx_tgt
+            value = random.choice([0, 1, 2])
+            sign = random.choice([-1, 1])
+            src_idx = i + value * sign
+            
+            if src_idx >= frame_num:
+                src_idx %= frame_num
+            elif src_idx < 0:
+                src_idx = frame_num + src_idx
+
+            data_list.append([char_name, [src_idx], [i]]) #char_name, frame_idx_src, frame_idx_tgt
     
     return data_list
 
@@ -126,8 +126,6 @@ def make_val_data_list(data_root, colorize_type, clip_interval):
     for char_name in char_names:
         frame_num = get_file_count(os.path.join(data_root, char_name, "gt"))
 
-        if colorize_type == "keyframe":
-            ref_frame_num = get_file_count(os.path.join(data_root, char_name, "ref", "gt"))
         if max_clip:
             clip_interval = frame_num
         
