@@ -141,4 +141,3 @@ If you find this work useful, please cite our paper:
   booktitle ={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}
   year		={2025}   
 }
-  
