@@ -69,8 +69,8 @@ You can download the pretrained checkpoints from the following links and puts un
 
 |   Model    |   Download  |                                  Description                                                    |
 | :--------: | :---------: | :---------------------------------------------------------------------------------------------: |
-| DACoN v1.0 | [link](https://drive.google.com/file/d/1VvgLFwas_LcawrWh274BEpw2P_euOg3a/view?usp=sharing) |                                 Same architecture as paper                                      |
-| DACoN v1.1 | [link](https://drive.google.com/file/d/1KJ77-aFDePmsJ6LDicJgM4pyGjagu6aI/view?usp=sharing) | Fix the image size during segment pooling.<br>Fuse DINO and U-Net features using simple addition instead of concat + MLP. |
+| DACoN v1.0 | [link[(https://drive.google.com/file/d/1VvgLFwas_LcawrWh274BEpw2P_euOg3a/view?usp=sharing) |                                 Same architecture as paper                                      |
+| DACoN v1.1 | [link[(https://drive.google.com/file/d/1KJ77-aFDePmsJ6LDicJgM4pyGjagu6aI/view?usp=sharing) | Fix the image size during segment pooling.<br>Fuse DINO and U-Net features<br> using simple addition instead of concat + MLP. |
 
 You can evaluate model using the following command:
 
@@ -112,7 +112,9 @@ Please organize your data as follows:
     	├──ref
 ```
 
-> **Note:** Only fully enclosed line images can be colorized properly. If there are gaps in the lines, the colorization quality may be degraded.
+> **Note:**
+> - Only fully enclosed line images can be colorized properly. If there are gaps in the lines, the colorization quality may be degraded.
+> - When using RGB line drawings, pixels with white [255, 255, 255] are treated as the background.
 
 
 After preparing your data, run the following command:
@@ -139,3 +141,4 @@ If you find this work useful, please cite our paper:
 }
 ```
 -->
+
