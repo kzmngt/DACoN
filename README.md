@@ -131,16 +131,14 @@ python dacon/inference.py \
 
 The colorized results can be found in the pred folder within each character's directory.
 
-<!--
+
 ## Citation
 If you find this work useful, please cite our paper:
 ```
-@article{nagata2025dacon,
+@inproceedings{nagata2025dacon,
   title		={DACoN: DINO for Anime Paint Bucket Colorization with Any Number of Reference Images},
-  author	={Kazuma, Nagata and Noashi, Kaneko},
-  journal	={arXiv preprint arXiv:????.????},
-  year		={2025}
+  author	={Kazuma, Nagata and Naoshi, Kaneko},
+  booktitle ={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}
+  year		={2025}   
 }
-```
--->
-
+  
