@@ -3,8 +3,7 @@
 [Paper Link](https://arxiv.org/pdf/????.????)
 -->
 
-https://github.com/kzmngt/DACoN/assets/43016459/architecture.png
-
+<img src="assets/architecture.png" width="800px"/>
 
 ## Usage
 
