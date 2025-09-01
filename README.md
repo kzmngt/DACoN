@@ -62,6 +62,8 @@ The checkpoints are saved under:
     ├──model_epoch_2.pth
     ├──...
 ```
+> **Note:**  
+> - If `model_epoch_*.pth` files exist in this folder, training will resume from the latest checkpoint instead of starting from scratch.
 
 ## Test
 
@@ -80,8 +82,6 @@ python dacon/test.py \
     --model checkpoints/dacon_v1_1.pth \
     --version 1_1
 ```
-> **Note:**  
-> - If `model_epoch_*.pth` files exist in this folder, training will resume from the latest checkpoint instead of starting from scratch.
 
 You can control the following behaviors via the YAML configuration (test.yaml):
 
