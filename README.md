@@ -40,7 +40,7 @@ pip install -r requirements.txt
 First, you have to download the dataset from [BasicPBC](https://github.com/ykdai/BasicPBC).
 Place the dataset as follows:
 ```
-├──datasets
+├──dataset
     ├──PaintBucket_Char_v2/
         ├──test/
         ├──train/
@@ -49,8 +49,8 @@ Place the dataset as follows:
 Once dowloading datasests is finished, run the following command to train DACoN from scratch:
 
 ```
-python .dacon/train.py \
-    --config ./configs/train.yaml \
+python dacon/train.py \
+    --config configs/train.yaml \
     --version 1_1
 ```
 
@@ -75,9 +75,9 @@ You can download the pretrained checkpoints from the following links and puts un
 You can evaluate model using the following command:
 
 ```
-python ./dacon/test.py \
-    --config ./configs/test.yaml \
-    --model ./checkpoints/dacon_v1_1.pth \
+python dacon/test.py \
+    --config configs/test.yaml \
+    --model checkpoints/dacon_v1_1.pth \
     --version 1_1
 ```
 
@@ -120,10 +120,10 @@ Please organize your data as follows:
 After preparing your data, run the following command:
 
 ```bash
-python ./dacon/inference.py \
-    --config ./configs/inference.yaml \
-    --model ./checkpoints/dacon_v1_1.pth \
-    --data ./inference \
+python dacon/inference.py \
+    --config configs/inference.yaml \
+    --model checkpoints/dacon_v1_1.pth \
+    --data inference \
     --version 1_1
 ```
 
