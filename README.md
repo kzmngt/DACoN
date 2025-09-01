@@ -1,10 +1,10 @@
 # DACoN: DINO for Anime Paint Bucket Colorization with Any Number of Reference Images (ICCV 2025)
-
-[Paper Link](https://arxiv.org/pdf/????.????)
-
 <!--
-https://github.com/kzmngt/DACoN/assets/43016459/architecture.png
+[Paper Link](https://arxiv.org/pdf/????.????)
 -->
+
+https://github.com/kzmngt/DACoN/assets/43016459/architecture.png
+
 
 ## Usage
 
@@ -39,12 +39,12 @@ pip install -r requirements.txt
 ## Train
 
 First, you have to download the dataset from [BasicPBC](https://github.com/ykdai/BasicPBC).
-
+Place the dataset as follows:
 ```
 ├──datasets
     ├──PaintBucket_Char_v2/
-   	 ├──test/
-   	 ├──train/
+        ├──test/
+        ├──train/
 ```
 
 Once dowloading datasests is finished, run the following command to train DACoN from scratch:
@@ -68,10 +68,10 @@ The checkpoints are saved under:
 
 You can download the pretrained checkpoints from the following links and puts under `checkpoints` folder.
 
-| Model      |   Download  |                                                            Description                                                            |
-| :--------- | :---------: | :-------------------------------------------------------------------------------------------------------------------------------: |
-| DACoN v1.0 | Please wait |                                                     Same architecture as paper                                                    |
-| DACoN v1.1 | Please wait | **Fix the image size during segment pooling**.<br>**Fuse DINO and U-Net features using simple addition instead of concat + MLP.** |
+|   Model    |   Download  |                                  Description                                                    |
+| :--------- | :---------: | :---------------------------------------------------------------------------------------------: |
+| DACoN v1.0 | Please wait |                                 Same architecture as paper                                      |
+| DACoN v1.1 | Please wait | Fix the image size during segment pooling.<br>Fuse DINO and U-Net features.<br> using simple addition instead of concat + MLP. |
 
 You can evaluate model using the following command:
 
@@ -140,4 +140,3 @@ If you find this work useful, please cite our paper:
 }
 ```
 -->
-
