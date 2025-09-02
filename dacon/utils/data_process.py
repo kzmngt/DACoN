@@ -99,7 +99,7 @@ def make_train_data_list(data_root):
     char_names = get_folder_names(data_root)
     
     for char_name in char_names:
-        frame_num = get_file_count(os.path.join(data_root, char_name, "gt"))
+        frame_num = get_file_count(os.path.join(data_root, char_name, "line"))
         for i in range(frame_num):
                 
             value = random.choice([0, 1, 2])
@@ -124,7 +124,7 @@ def make_val_data_list(data_root, colorize_type, clip_interval):
         max_clip = True
     
     for char_name in char_names:
-        frame_num = get_file_count(os.path.join(data_root, char_name, "gt"))
+        frame_num = get_file_count(os.path.join(data_root, char_name, "line"))
 
         if max_clip:
             clip_interval = frame_num
@@ -172,6 +172,7 @@ def make_inference_data_list(data_root, char_name, is_ref):
         data_list.append([char_name, frame_name])
 
     return data_list
+
 
 
 
