@@ -136,8 +136,8 @@ The colorized results can be found in the pred folder within each character's di
 If you find this work useful, please cite our paper:
 ```
 @inproceedings{nagata2025dacon,
-  title		={DACoN: DINO for Anime Paint Bucket Colorization with Any Number of Reference Images},
-  author	={Kazuma, Nagata and Naoshi, Kaneko},
-  booktitle ={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)}
-  year		={2025}   
+  title     = {{DACoN}: {DINO} for Anime Paint Bucket Colorization with Any Number of Reference Images},
+  author    = {Nagata, Kazuma and Kaneko, Naoshi},
+  booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year      = {2025}
 }
