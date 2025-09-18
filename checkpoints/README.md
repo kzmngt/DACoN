@@ -13,7 +13,7 @@ Note that the results reported here differ slightly from those in the original p
 ## Table 1. Keyframe Colorization
 
 | Model | Ref. shot |  Acc  | Acc-Thresh | Pix-Acc | Pix-F-Acc | Pix-B-MIoU |
-|:------|:---------:|------:|-----------:|--------:|----------:|-----------:|
+|:-----:|:---------:|:-----:|-----------:|:-------:|:---------:|:----------:|
 | v1.0  |     1     | 67.61 |     72.52  |  96.85  |   90.65   |    99.18   |
 |       |     5     | 73.35 |     77.57  |  97.76  |   93.65   |    99.18   |
 |       |    max    | 74.47 |     78.53  |  98.06  |   94.29   |    99.23   |
@@ -24,11 +24,11 @@ Note that the results reported here differ slightly from those in the original p
 ## Table 2. Consecutive Frame Colorization
 
 | Model |  Input Data  |  Acc  | Acc-Thresh | Pix-Acc | Pix-F-Acc | Pix-B-MIoU |
-|:------|:-------------|------:|-----------:|--------:|----------:|-----------:|
-| v1.0  | 3D Rendered  | 84.61 |     88.14  |  99.27  |   97.97   |    99.63   |
-|       | Hand-drawn   | 87.40 |     90.54  |  99.10  |   96.95   |    99.71   |
-| v1.1  | 3D Rendered  | 85.32 |     88.82  |  99.34  |   98.24   |    99.65   |
-|       | Hand-drawn   | 87.66 |     90.84  |  99.27  |   97.27   |    99.75   |
+|:-----:|:------------:|:-----:|:----------:|:-------:|:---------:|:----------:|
+| v1.0  | 3D Rendered  | 84.61 |   88.14    |  99.27  |   97.97   |   99.63    |
+|       | Hand-drawn   | 87.40 |   90.54    |  99.10  |   96.95   |   99.71    |
+| v1.1  | 3D Rendered  | 85.32 |   88.82    |  99.34  |   98.24   |   99.65    |
+|       | Hand-drawn   | 87.66 |   90.84    |  99.27  |   97.27   |   99.75    | 
 
 ---
 > **Note:**  
