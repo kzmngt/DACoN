@@ -66,14 +66,6 @@ The checkpoints are saved under:
 > - If `model_epoch_*.pth` files exist in this folder, training will resume from the latest checkpoint instead of starting from scratch.
 
 ## Test
-
-You can download the pretrained checkpoints from the following links and puts under `checkpoints` folder.
-
-|   Model    |   Download  |                                  Description                                                    |
-| :--------: | :---------: | :---------------------------------------------------------------------------------------------: |
-| DACoN v1.0 | [link](https://drive.google.com/file/d/1VvgLFwas_LcawrWh274BEpw2P_euOg3a/view?usp=sharing) |                                 Same architecture as paper                                      |
-| DACoN v1.1 | [link](https://drive.google.com/file/d/1KJ77-aFDePmsJ6LDicJgM4pyGjagu6aI/view?usp=sharing) | Set a fixed image size during segment pooling.<br>Fuse DINO and U-Net features using simple addition instead of concat + MLP. |
-
 You can evaluate model using the following command:
 
 ```
