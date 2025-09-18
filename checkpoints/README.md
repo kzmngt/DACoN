@@ -1,6 +1,7 @@
 # Quantitative Results
 
-This README provides detailed quantitative results for the distributed DACoN models.
+This README provides detailed quantitative results for the released DACoN models.  
+Note that the results reported here differ slightly from those in the original paper.
 
 |   Model    |   Download  |                                  Description                                                    |
 | :--------: | :---------: | :---------------------------------------------------------------------------------------------: |
