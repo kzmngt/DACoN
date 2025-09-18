@@ -73,6 +73,8 @@ You can download the pretrained checkpoints from the following links and puts un
 | :--------: | :---------: | :---------------------------------------------------------------------------------------------: |
 | DACoN v1.0 | [link](https://drive.google.com/file/d/1VvgLFwas_LcawrWh274BEpw2P_euOg3a/view?usp=sharing) |                                 Same architecture as paper                                      |
 | DACoN v1.1 | [link](https://drive.google.com/file/d/1KJ77-aFDePmsJ6LDicJgM4pyGjagu6aI/view?usp=sharing) | Set a fixed image size during segment pooling.<br>Fuse DINO and U-Net features using simple addition instead of concat + MLP. |
+> **Note:**  
+> - The released mode has been retrained before distribution, and its performance differs slightly from the results reported in the paper. Detailed qualitative results are provided [here](./checkpoints/README.md)
 
 You can evaluate model using the following command:
 
