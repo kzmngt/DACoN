@@ -29,7 +29,6 @@ Note that the results reported here differ slightly from those in the original p
 | v1.1  | 3D Rendered | 85.32 | 88.82      | 99.34   | 98.24     | 99.65      |
 |       | Hand-drawn  | 87.66 | 90.84      | 99.27   | 97.27     | 99.75      |
 
----
 > **Note:**  
 > - "Ref. shot" indicates the number of reference images; "max" uses all images in the color design sheet for each character.  
 > - Acc-Thresh is computed only for segments larger than 10 pixels.
